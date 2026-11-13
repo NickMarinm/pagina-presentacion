@@ -1,0 +1,8 @@
+@import "tailwindcss";
+:root{--bg-dark:#23252A;--accent:#33D685;--font-mono:"JetBrains Mono",monospace}
+html{font-family:Inter,sans-serif}
+.font-mono{font-family:var(--font-mono)}
+.card{transition:transform .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-3px);border-color:rgba(51,214,133,.4)}
+.nav-link.active{color:var(--accent);font-weight:600}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
